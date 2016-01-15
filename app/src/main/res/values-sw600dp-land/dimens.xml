@@ -1,0 +1,8 @@
+<resources>
+    
+    <dimen name="grid_horizontal_margin">75dp</dimen>
+
+    <!-- Feed details -->
+    <dimen name="feed_details_dialog_width">600dp</dimen>
+
+</resources>

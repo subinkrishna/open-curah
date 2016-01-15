@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fragment_feed_list" type="layout">@layout/fragment_feed_list_tablet</item>
+    <item name="fragment_feed_details" type="layout">@layout/fragment_feed_details_tablet</item>
+    <item name="fragment_welcome_note" type="layout">@layout/fragment_welcome_note_tablet</item>
+    <item name="item_feed_item_card_with_date" type="layout">@layout/item_feed_item_card_with_date_tablet</item>
+</resources>

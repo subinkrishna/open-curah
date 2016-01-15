@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:curah="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nav_container_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_four_color_divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/nav_list_item_height"
+        android:divider="@drawable/divider_navigation_list_horizontal"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle">
+
+        <LinearLayout
+            android:id="@+id/refresh_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_nav_list_item"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/nav_list_item_padding_horizontal"
+                android:paddingRight="@dimen/nav_list_item_padding_horizontal"
+                android:background="@drawable/background_nav_list_item">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_small"
+                    android:text="Refresh" />
+
+                <TextView
+                    android:id="@+id/last_refresh_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_light"
+                    android:visibility="gone"
+                    android:text="Today 1:30 AM" />
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/refresh_progress_indicator"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"/>
+
+            <com.subinkrishna.curah.ui.widget.CTextView
+                android:id="@+id/offline_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/NavigationListButton"
+                android:textColor="@android:color/holo_red_dark"
+                android:textAllCaps="true"
+                curah:fontFamily="condensed"
+                android:layout_gravity="center_vertical"
+                android:text="OFFLINE"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/about"
+            style="@style/NavigationListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_nav_list_item"
+            android:visibility="gone"
+            android:text="About" />
+
+        <Button
+            style="@style/NavigationListButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Settings" />
+
+    </LinearLayout>
+
+</LinearLayout>

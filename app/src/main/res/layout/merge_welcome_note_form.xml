@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.subinkrishna.curah.ui.widget.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_screen_header"
+        android:textColor="@color/text_welcome_screen"
+        android:textSize="@dimen/text_welcome_header"
+        app:fontFamily="light" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/welcome_screen_terms"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_medium" />
+
+    <Button
+        android:id="@+id/button_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_agree_button"
+        android:shadowRadius="0"
+        android:text="@string/welcome_screen_button_agree"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_xsmall"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_disagree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_disagree_button"
+        android:shadowRadius="0"
+        android:text="@string/welcome_screen_button_disagree"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_xsmall"
+        android:textStyle="bold" />
+
+</merge>

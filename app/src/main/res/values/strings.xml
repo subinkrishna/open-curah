@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Curah Reader</string>
+    <string name="provider_name">Feeds</string>
+
+    <!-- Menu labels -->
+    <string name="action_refresh">Refresh</string>
+    <string name="action_about">About</string>
+    <string name="action_share">Share</string>
+
+    <!-- Date -->
+    <string name="last_updated">Updated</string>
+    <string name="just_now">Just now</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="this_week">This week</string>
+    <string name="older">Older</string>
+    <string name="older_than_a_week">Older than a week</string>
+
+    <!-- Welcome Screen -->
+    <string name="welcome_screen_header">Hello! </string>
+    <string name="welcome_screen_terms">This is Curah Reader &amp; this is an experimental app. This app doesn\'t come with any warranty. This app is NOT affiliated with Microsoft.</string>
+    <string name="welcome_screen_button_agree">Yes, I understand. Proceed</string>
+    <string name="welcome_screen_button_disagree">No, I don\'t want to continue</string>
+
+    <!-- Feeds -->
+    <string name="sync_in_progress">Sync in progress</string>
+    <string name="first_sync_message">Syncing. This may take a while.</string>
+    <string name="tap_to_see_updates">Tap to see updates</string>
+
+    <!-- Feed Navigation items -->
+    <string name="nav_header_curah">Curah</string>
+    <string name="nav_item_curah_featured">Featured</string>
+    <string name="nav_item_curah_latest">Latest</string>
+    <string name="nav_header_ms_news">Microsoft News</string>
+    <string name="nav_item_ms_news_official_blog">The Official Microsoft Blog</string>
+    <string name="nav_item_ms_latest_in_research">Latest in Research</string>
+    <string name="nav_item_ms_research_downloads">Research Downloads</string>
+
+    <!-- Feed titles -->
+    <string name="title_curah_featured">Featured Curah</string>
+    <string name="title_curah_latest">Latest Curah</string>
+    <string name="title_ms_news_official_blog">The Official Microsoft Blog</string>
+    <string name="title_ms_latest_in_research">Latest in Research</string>
+    <string name="title_ms_research_downloads">Research Downloads</string>
+
+    <string name="note">Note</string>
+    <string name="important">Important</string>
+    <string name="warning">Warning</string>
+    <string name="close">Close</string>
+    <string name="warning_non_curated_data">This is a non-curated feed. This feed may contain invalid or inappropriate content. This application is not responsible for the contents of the feed.</string>
+
+    <!-- Error messages -->
+    <string name="error_unknown">Oops! Something went wrong.</string>
+    <string name="error_no_matching_apps">No matching applications found!</string>
+    <string name="error_empty_feed">Unable to fetch the contents at this moment. Please try later.</string>
+    <string name="error_empty_feed_network">Unable to fetch the contents. Please verify your network settings.</string>
+
+</resources>

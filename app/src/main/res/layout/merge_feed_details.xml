@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Externalize dimens -->
+    <LinearLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar_background"
+        android:gravity="bottom"
+        android:minHeight="100dp"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="75dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <com.subinkrishna.curah.ui.widget.CTextView
+            android:id="@+id/title"
+            app:fontFamily="light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:ellipsize="end"
+            android:text="Some useful tips!"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_large" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_container"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:paddingLeft="75dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/content_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.subinkrishna.curah.ui.widget.CTextView
+                android:id="@+id/author"
+                app:fontFamily="condensed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Yuri Burger . YESTERDAY 12:30PM"
+                android:textColor="@color/text_card_author"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="In this newsletter, we demonstrate how SAP Gateway for Microsoft enables you to easily and securely integrate your Microsoft and SAP applications and rapidly create your own business productivity solutions."
+                android:textColor="@color/text_primary"
+                android:textColorLink="@color/actionbar_background"
+                android:textSize="@dimen/text_medium" />
+
+            <!-- TODO: Create a style -->
+            <TextView
+                android:id="@+id/visit_page_button"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/background_flat_button"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="Visit Page"
+                android:textAllCaps="true"
+                android:textColor="@color/actionbar_background"
+                android:textSize="@dimen/text_small"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/divider_navigation_list_horizontal" />
+
+            <TextView
+                android:id="@+id/share_button"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/background_flat_button"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="Share"
+                android:textAllCaps="true"
+                android:textColor="@color/actionbar_background"
+                android:textSize="@dimen/text_small"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/floating_button_width"
+        android:layout_height="@dimen/floating_button_height"
+        android:layout_alignBottom="@id/header_container"
+        android:layout_marginBottom="-22dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/background_circular_card"
+        android:src="@drawable/ic_share_black_24dp"
+        android:tint="@color/text_primary" />
+
+</merge>

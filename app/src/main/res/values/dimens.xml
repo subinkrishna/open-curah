@@ -1,0 +1,35 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Welcome screen -->
+    <dimen name="button_corner_radius">2dp</dimen>
+    <dimen name="text_welcome_header">40sp</dimen>
+
+    <!-- Feed list / grid -->
+    <dimen name="feed_list_divider_height">12dp</dimen>
+    <dimen name="toolbar_height">50dp</dimen>
+    <dimen name="grid_horizontal_margin">0dp</dimen>
+
+    <!-- Navigation fragment -->
+    <dimen name="nav_container_width">280dp</dimen>
+    <dimen name="nav_list_item_height">50dp</dimen>
+    <dimen name="nav_list_item_padding_horizontal">16dp</dimen>
+    <dimen name="nav_list_header_item_padding_bottom">3dp</dimen>
+    <dimen name="menu_button_padding">16dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_xsmall">14sp</dimen>
+    <dimen name="text_small">15sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_xlarge">24sp</dimen>
+    <dimen name="text_xxlarge">30sp</dimen>
+
+    <!-- Feed details -->
+    <dimen name="feed_details_dialog_width">300dp</dimen>
+    <dimen name="floating_button_height">45dp</dimen>
+    <dimen name="floating_button_width">44dp</dimen>
+
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:curah="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/card_background_selected" />
+
+    <com.subinkrishna.curah.ui.widget.CTextView
+        android:id="@+id/date_header"
+        curah:fontFamily="light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:paddingBottom="0dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="25dp"
+        android:text="Today"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/text_xlarge" />
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_nav_list_item"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.subinkrishna.curah.ui.widget.CTextView
+            android:id="@+id/author"
+            curah:fontFamily="condensed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yuri Burger . YESTERDAY 12:30PM"
+            android:textColor="@color/text_card_author"
+            android:textSize="@dimen/text_small" />
+
+        <com.subinkrishna.curah.ui.widget.CTextView
+            android:id="@+id/title"
+            curah:fontFamily="light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="TITLE (Light)"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_xlarge" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="These are my note-to-self links on AngularJS, mostly from a SharePoint developers perspective. As a KnockoutJS convert, I used these articles to learn the basic AngularJS skills."
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_medium" />
+
+    </LinearLayout>
+
+</merge>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Core app colors -->
+    <color name="app_background">#EEE</color>
+    <color name="actionbar_background">@android:color/holo_blue_dark</color>
+
+    <!-- Card -->
+    <color name="card_shadow">#6000</color>
+    <color name="card_background_default">#F6F6F6</color>
+    <color name="card_background_selected">#DDD</color>
+
+    <!-- Navigation Fragment -->
+    <color name="nav_container_background">@color/card_background_default</color>
+
+    <!-- text colors -->
+    <color name="text_primary">#333</color>
+    <color name="text_secondary">#666</color>
+    <color name="text_light">#AAA</color>
+    <color name="text_navigation_item">#666</color>
+    <color name="text_welcome_screen">@android:color/holo_blue_dark</color>
+    <color name="text_feed_card_date_header">#AAF5F5F5</color>
+    <color name="text_card_author">@android:color/holo_green_dark</color>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FAF5D2"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="5dp">
+
+    <com.subinkrishna.curah.ui.widget.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/text_primary"
+        android:text="@string/important"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        app:fontFamily="regular"/>
+
+    <com.subinkrishna.curah.ui.widget.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/text_medium"
+        android:textColor="@color/text_primary"
+        app:fontFamily="regular"
+        android:text="@string/warning_non_curated_data"/>
+
+    <com.subinkrishna.curah.ui.widget.CTextView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="right"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:text="@string/close"
+        style="?android:borderlessButtonStyle"
+        app:fontFamily="regular"
+        android:textAllCaps="true" />
+
+</LinearLayout>

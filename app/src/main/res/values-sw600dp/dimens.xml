@@ -1,0 +1,24 @@
+<resources>
+    
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="activity_vertical_margin">64dp</dimen>
+    <dimen name="grid_horizontal_margin">0dp</dimen>
+
+    <!-- Feed list / grid -->
+    <dimen name="toolbar_height">62dp</dimen>
+
+    <!-- Navigation fragment -->
+    <dimen name="nav_container_width">320dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_xsmall">15sp</dimen>
+    <dimen name="text_small">16sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_large">22sp</dimen>
+    <dimen name="text_xlarge">26sp</dimen>
+    <dimen name="text_xxlarge">32sp</dimen>
+
+    <!-- Feed details -->
+    <dimen name="feed_details_dialog_width">450dp</dimen>
+
+</resources>
