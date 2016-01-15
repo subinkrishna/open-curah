@@ -155,20 +155,6 @@ public class NavigationFragment
         final List<NavigationListItem> items = new LinkedList<NavigationListItem>();
         final Resources res = getResources();
 
-        // Curah
-        items.add(NavigationListItem.newInstance(res.getString(R.string.nav_header_curah),
-                android.R.color.holo_blue_dark,
-                null,
-                NavigationItemType.Header));
-        items.add(NavigationListItem.newInstance(res.getString(R.string.nav_item_curah_featured),
-                R.color.text_primary,
-                Feed.CURAH_FEATURED,
-                NavigationItemType.Item));
-        items.add(NavigationListItem.newInstance(res.getString(R.string.nav_item_curah_latest),
-                R.color.text_primary,
-                Feed.CURAH_LATEST,
-                NavigationItemType.Item));
-
         // MS Blog & News
         items.add(NavigationListItem.newInstance(res.getString(R.string.nav_header_ms_news),
                 android.R.color.holo_purple,
@@ -185,6 +171,20 @@ public class NavigationFragment
         items.add(NavigationListItem.newInstance(res.getString(R.string.nav_item_ms_research_downloads),
                 R.color.text_primary,
                 Feed.RESEARCH_DOWNLOADS,
+                NavigationItemType.Item));
+
+        // Curah
+        items.add(NavigationListItem.newInstance(res.getString(R.string.nav_header_curah),
+                android.R.color.holo_blue_dark,
+                null,
+                NavigationItemType.Header));
+        items.add(NavigationListItem.newInstance(res.getString(R.string.nav_item_curah_featured),
+                R.color.text_primary,
+                Feed.CURAH_FEATURED,
+                NavigationItemType.Item));
+        items.add(NavigationListItem.newInstance(res.getString(R.string.nav_item_curah_latest),
+                R.color.text_primary,
+                Feed.CURAH_LATEST,
                 NavigationItemType.Item));
 
         return items;

@@ -21,7 +21,7 @@ public class CurahApplication extends Application {
     private static final String DEFAULT_PREF = "com.subinkrishna.curah.pref";
 
     /** Default feed to be populated */
-    public static final Feed DefaultFeed = Feed.CURAH_FEATURED;
+    public static final Feed DefaultFeed = Feed.MICROSOFT_OFFICIAL_BLOG;
 
     /**
      * Returns the static instance of application.
@@ -56,9 +56,10 @@ public class CurahApplication extends Application {
      * @return
      */
     public static SharedPreferences getPreferences() {
+        // Using MODE_MULTI_PROCESS to enable
+        // different processes with in the same app to read the pref
         return sInstance.getSharedPreferences(DEFAULT_PREF,
-                MODE_MULTI_PROCESS); // Using MODE_MULTI_PROCESS to enable
-                                     // different processes with in the same app to read the pref
+                MODE_MULTI_PROCESS);
     }
 
     /**
