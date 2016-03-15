@@ -1,6 +1,7 @@
 package com.subinkrishna.curah.ui.view;
 
 import android.content.Context;
+import android.text.Html;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.TextUtils;
@@ -88,9 +89,9 @@ public class FeedItemView extends LinearLayout {
             TextView aTextView = null;
             for (int i = 0; i < textViews.length; i++) {
                 aTextView = textViews[i];
-                if (null != aTextView) {
-                    aTextView.setText(TextUtils.isEmpty(values[i]) ? "" : values[i].trim());
-                }
+                aTextView.setText(TextUtils.isEmpty(values[i])
+                        ? ""
+                        : Html.fromHtml(values[i].trim()));
             }
 
             // Set the styled (spanned)
