@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/card_background_default"
+    android:descendantFocusability="blocksDescendants"
     android:orientation="vertical">
 
     <include layout="@layout/merge_feed_item_card_contents" />

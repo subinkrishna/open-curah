@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="2dp"
+    android:descendantFocusability="blocksDescendants"
     app:cardBackgroundColor="@android:color/white"
     app:cardCornerRadius="1dp"
     app:cardElevation="1dp">
