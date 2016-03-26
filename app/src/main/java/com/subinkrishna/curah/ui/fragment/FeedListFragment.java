@@ -314,7 +314,7 @@ public class FeedListFragment
             // TODO: Serializable is not preferred, need to use Parcelable
             intent.putExtra(FeedDetailActivity.KEY_ITEM, item);
             activity.startActivity(intent);
-            //activity.overridePendingTransition(0, 0);
+            activity.overridePendingTransition(R.anim.slide_in_right, R.anim.fade_out);
         }
     }
 }

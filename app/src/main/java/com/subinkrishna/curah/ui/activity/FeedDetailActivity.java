@@ -47,7 +47,7 @@ public class FeedDetailActivity extends ActionBarActivity {
     @Override
     public void finish() {
         super.finish();
-        //overridePendingTransition(0, 0);
+        overridePendingTransition(R.anim.fade_in, R.anim.slide_out_right);
     }
 
     @Override
