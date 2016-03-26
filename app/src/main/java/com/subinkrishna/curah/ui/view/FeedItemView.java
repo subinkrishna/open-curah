@@ -89,9 +89,12 @@ public class FeedItemView extends LinearLayout {
             TextView aTextView = null;
             for (int i = 0; i < textViews.length; i++) {
                 aTextView = textViews[i];
-                aTextView.setText(TextUtils.isEmpty(values[i])
-                        ? ""
-                        : Html.fromHtml(values[i].trim()));
+                if (null != aTextView) {
+                    aTextView.setText(TextUtils.isEmpty(values[i])
+                            ? ""
+                            // Strip HTML tags
+                            : Html.fromHtml(values[i].trim()).toString());
+                }
             }
 
             // Set the styled (spanned)
