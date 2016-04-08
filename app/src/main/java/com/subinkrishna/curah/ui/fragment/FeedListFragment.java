@@ -198,7 +198,9 @@ public class FeedListFragment
             }
         } else {
             // TODO: Remove after testing
-            d(TAG, "Feed date: " + data.getPublishDate() + " (Now: " + System.currentTimeMillis() + ")");
+            if (null != data) {
+                d(TAG, "Feed date: " + data.getPublishDate() + " (Now: " + System.currentTimeMillis() + ")");
+            }
 
             // TODO: Check if the incoming data's publish date is latest than mData.
             // If yes, show bubble, else ignore.
